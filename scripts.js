@@ -9,7 +9,9 @@ const provinces = [
 ];
 const alphSortedProv = provinces.sort();
 console.log(alphSortedProv);
-const provincesNoCape = provinces.filter((province) => !"Cape");
+const provincesNoCape = provinces.filter(
+  (province) => !province.includes("Cape")
+);
 console.log(provincesNoCape);
 // A list of names:
 const names = [
