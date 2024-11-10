@@ -7,12 +7,17 @@ const provinces = [
   "KwaZulu-Natal",
   "Free State",
 ];
+
+//alphabetically sorts provices
 const alphSortedProv = provinces.sort();
 console.log(alphSortedProv);
+
+//dispatches provinces with no Cape
 const provincesNoCape = provinces.filter(
   (province) => !province.includes("Cape")
 );
 console.log(provincesNoCape);
+
 // A list of names:
 const names = [
   "Ashwin",
@@ -22,9 +27,18 @@ const names = [
   "Shailen",
   "Frikkie",
 ];
+
+//checks if a name has an 's/S' in it
+const nameHasS = names.map((name) =>
+  name.split("").some((character) => character === "S" || character === "s")
+);
+console.log(nameHasS);
+
+//checks the name length
 const nameLength = names.map((name) => name.length);
 console.log(nameLength);
 
+//changes provinces to upper case letters
 names.forEach((name, i) => {
   console.log(`${name} : ${provinces[i]}`);
 });
@@ -39,3 +53,8 @@ const products = [
   { product: "coffee", price: 10 },
   { product: "tea", price: "" },
 ];
+//log product name
+
+products.forEach((product) => {
+  console.log(product.product);
+});
