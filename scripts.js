@@ -5,12 +5,9 @@ const provinces = [
   "Northern Cape",
   "Eastern Cape",
   "KwaZulu-Natal",
-  "Free State",
+  "free State",
 ];
 
-provinces.forEach((province) => {
-  console.log(province);
-});
 // A list of names:
 const names = [
   "Ashwin",
@@ -21,12 +18,12 @@ const names = [
   "Frikkie",
 ];
 
-names.forEach((name) => {
-  console.log(name);
+names.forEach((name, i) => {
+  console.log(`${name} : ${provinces[i]}`);
 });
+const upperCaseProv = provinces.map((province) => province.toUpperCase());
+console.log(upperCaseProv);
 
-console.log(${names}`:`${provinces})
-// A list of products with prices:
 const products = [
   { product: "banana", price: "2" },
   { product: "mango", price: 6 },
