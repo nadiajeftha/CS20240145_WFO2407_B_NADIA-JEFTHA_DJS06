@@ -5,9 +5,12 @@ const provinces = [
   "Northern Cape",
   "Eastern Cape",
   "KwaZulu-Natal",
-  "free State",
+  "Free State",
 ];
-
+const alphSortedProv = provinces.sort();
+console.log(alphSortedProv);
+const provincesNoCape = provinces.filter((province) => !"Cape");
+console.log(provincesNoCape);
 // A list of names:
 const names = [
   "Ashwin",
@@ -17,6 +20,8 @@ const names = [
   "Shailen",
   "Frikkie",
 ];
+const nameLength = names.map((name) => name.length);
+console.log(nameLength);
 
 names.forEach((name, i) => {
   console.log(`${name} : ${provinces[i]}`);
